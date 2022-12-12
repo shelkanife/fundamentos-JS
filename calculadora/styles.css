@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Press+Start+2P&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    background-color: #202124;
+    font-family: 'Press Start 2P', cursive;
+}
+main{
+    height: 100%;
+    border-radius: 1rem;
+    padding: 10px;
+    background-color: #2980B9;
+}
+body{
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+}
+section#screen-container {
+    height: 30%;
+    background-color: #2980B9;
+    padding: 10px;
+}
+section#buttons{
+    height: 70%;
+    background-color: #2980B9;
+    padding: 10px;
+}
+section#buttons  > div{
+    flex: 1;
+}
+
+#history_{
+    direction: ltr;
+    display: flex;
+    justify-content: flex-end;
+}
+#history{
+    background-color: #7b7979;
+    color: black;
+    border:1px solid;
+    height: 20%;
+    padding: 10px;
+    direction: rtl;
+    color: #fff;
+}
+#screen{
+    background-color: #7b7979;
+    color: black;
+    border:1px solid;
+    height: 80%;
+    padding: 10px;
+    /* direction: rtl; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 40px;
+    color: #fff;
+}
+section#buttons{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    background-color: #3d3d3d;
+    
+    display: flex;
+    justify-content: flex-end;
+}
+.row div{
+    flex: calc(1 / 4);
+}
+.btn{
+    background-color: #3d3d3d;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s;
+}
+.btn:hover{
+    background-color: grey;
+}
+
+@media screen and (max-width:576px) {
+    body{
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        width: 80%;
+    }
+}

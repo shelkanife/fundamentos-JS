@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+body{
+    height: 100vh;
+    background-color: brown;
+    overflow: hidden;
+    font-family: 'Nerko One', cursive;
+}
+
+.pressed{
+    transform: scale(0.95);
+}
+h1{
+    color: #fff;
+    text-align: center;
+}
+#btns{
+    text-align: center;
+    height: calc(100vh - 80vh);
+    position:relative;
+    
+}
+button{
+    outline: none;
+    padding: 10px;
+    width: 100px;
+    border-color: #fff;
+    color: #fff;
+    background-color: brown;
+    margin-left: 20px;
+}
+button:hover{
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    transition: ease .5s;
+}
+kbd{
+    display: inline-block;
+    width: 50px;
+    height: 300px;
+    justify-content: center;
+    background-color: #fff;
+    line-height: 300px;
+    text-align: center;
+    border: 2px solid black;
+}
+#keys-container{
+    margin: auto;
+    text-align: center;
+}
