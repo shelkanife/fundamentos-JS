@@ -1,4 +1,4 @@
-const values = {'+':0,'-':0,'/':1,'*':1}
+const values = {'+':0,'-':0,'/':1,'*':1,'^':1,'√':1,'%':0}
 const operatos = Object.keys(values)
 
 class calculator {
@@ -50,9 +50,9 @@ class calculator {
         return finalExpression
     }
     evalExpression(expression){
-        console.log(expression)
         const stack = [] 
         const array = expression
+        console.log(array)
         for(let chr of array){
             switch(chr){
                 case '+':
@@ -67,7 +67,19 @@ class calculator {
                     break
                 case '/':
                     const y = stack.pop(), x =stack.pop()
-                    stack.push(x / y)
+                    stack.push((x / y).toFixed(5))
+                    break
+                case '^':
+                    const i = stack.pop(), j =stack.pop()
+                    stack.push(Math.pow(j,i))
+                    break
+                case '√':
+                    const c = stack.pop()
+                    stack.push(Math.sqrt(c).toFixed(5))
+                    break
+                case '%':
+                    const t = stack.pop(), u =stack.pop()
+                    stack.push(u % t)
                     break
                 default:
                     stack.push(parseFloat(chr))

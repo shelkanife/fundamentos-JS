@@ -21,6 +21,6 @@ document.getElementById('equal').addEventListener('click',() => {
     screen.textContent = c.getResult(screen.textContent)
 })
 document.getElementById('reset').addEventListener('click',()=>{
-    screen.textContent = '0'
+    screen.textContent = ''
     history.textContent = ''
 })
